@@ -1,0 +1,13 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#show {
+  display: inline-block;
+  cursor: pointer;
+}

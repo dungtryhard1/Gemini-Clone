@@ -1,0 +1,95 @@
+#icon-bars-responsive {
+  display: none;
+  position: absolute;
+  left: 2%;
+  top: 4%;
+}
+
+.sidebar {
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f4f9;
+  padding: 25px 15px;
+
+  .top {
+    .px-2 {
+      padding-left: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .new-chat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    background-color: #e6eaf1;
+    color: gray;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 8px 20px 8px 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    p {
+      margin: 0;
+    }
+  }
+
+  .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+
+    .recent-title {
+      margin: 20px 0;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+
+    .bottom-item {
+      cursor: pointer;
+
+      p {
+        padding-left: 12px;
+      }
+    }
+  }
+}
+
+.recent-entry {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 8px 8px 8px 12px;
+  border-radius: 50px;
+  color: #282828;
+  cursor: pointer;
+
+  p {
+    width: 120px;
+    font-size: 14px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    background-color: #e2e6eb;
+  }
+}
+
+@media only screen and (max-width: 768px){
+    .sidebar {
+      display: none;
+    }
+
+    #icon-bars-responsive {
+      display: inline-block !important;
+    }
+} 
